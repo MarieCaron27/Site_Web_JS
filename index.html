@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp_Form</title>
+    <script src="./Controlors/signUp_form.js" defer></script>
+</head>
+<body>
+    <form id="signUpForm" method="post">
+        <div>
+            <input type="text" id="firstName" placeholder="Your first name">
+            <div id="errorFirstName"></div>
+        </div>
+
+        <div>
+            <input type="text" id="lastName" placeholder="Your last name">
+            <div id="errorLastName"></div>
+        </div>
+
+        <div>
+            <input type="text" id="username" placeholder="Your username">
+            <div id="errorUsername"></div>
+        </div>
+
+        <div>
+            <input type="mail" id="mailAddress" placeholder="Your mail address">
+            <div id="errorMailAddress"></div>
+        </div>
+
+        <div>
+            <input type="password" id="userPassword" placeholder="Your password">
+            <div id="errorPassword"></div>
+        </div>
+
+        <div>
+            <input type="password" id="passwordConfirmed" placeholder="Confirm your password">
+            <div id="errorPasswordConfirmed"></div>
+        </div>
+
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+</body>
+</html>
