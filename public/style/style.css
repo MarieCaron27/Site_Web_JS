@@ -69,6 +69,15 @@ h1,h2,h3
     text-align: center;
 }
 
+.inscription input[type="mail"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
 .inscription input[type="password"] 
 {
     margin-bottom: -1px;

@@ -11,7 +11,7 @@ const dataBase = mysql.createConnection
     database: 'projet_web_jeux'
 });
 
-const publicDirectory = myPath.join(__dirname,'./style'); //Where our JS or CSS files are going to be
+const publicDirectory = myPath.join(__dirname,'./public'); //Where our JS or CSS files are going to be
 
 app.use(express.static(publicDirectory)); //Make sure that express uses the publicDirectory
 app.set('view engine','hbs');
