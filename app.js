@@ -34,6 +34,12 @@ app.get("/", (req,res) =>
     res.render("index"); //Used to render a view and sends the rendered HTML string to the client
 });
 
+app.get("/login_page", (req,res) =>
+{
+    //res.send("<h1>Home Page</h1>"); //Send a responde to the requeste received (req)
+    res.render("login_page"); //Used to render a view and sends the rendered HTML string to the client
+});
+
 app.listen(8000, () =>
 {
     console.log("Server started on port 8000");
