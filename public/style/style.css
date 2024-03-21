@@ -106,6 +106,13 @@ h1,h2,h3
     text-align: center;
 }
 
+/* Game page */
+
+li
+{
+    list-style: none;
+}
+
 /* Footer */
 
 #footer 
