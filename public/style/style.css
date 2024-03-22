@@ -35,14 +35,14 @@ header
     text-align:center;
 }
 
-/* Titres */
+/* Titles */
 
 h1,h2,h3
 {
     text-align: center;
 }
 
-/* Formulaire pour s'inscrire */
+/* Sign Up Form */
 
 #inscription
 {
@@ -87,17 +87,52 @@ h1,h2,h3
     text-align: center;
 }
 
-.inscription input[type="file"] 
+.inscription input[type="sumbit"] 
 {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border-width: fit-content;
     text-align: center;
-    margin-top: 5px;
 }
 
-.inscription input[type="sumbit"] 
+/* Log In Form */
+
+#connexion
+{
+    margin-right: 400px;
+    margin-left: 400px;
+    border: solid thick black;
+    margin-top: 10px;
+}
+
+.logInForm
+{
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+
+.connexion input[type="text"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="password"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="sumbit"] 
 {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
