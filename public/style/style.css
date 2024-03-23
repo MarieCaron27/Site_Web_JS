@@ -143,9 +143,42 @@ h1,h2,h3
 
 /* Welcome page */
 
-#welcomePage p
-{
+#welcomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrage vertical */
+    flex-wrap: wrap;
+}
+
+.images-container {
+    flex: 1;
+    max-width: 30%; /* Ajuster la largeur des images */
+}
+
+.images-container img {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 600px;
     text-align: center;
+    margin: 20px; /* Ajouter une marge pour l'espace autour du texte */
+}
+
+.startButton {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Pour supprimer le soulignement */
+}
+
+.startButton:hover {
+    background-color: darkviolet; /* Couleur au survol */
 }
 
 /* Game page */
