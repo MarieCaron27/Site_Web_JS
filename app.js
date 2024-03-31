@@ -12,6 +12,15 @@ const dataBase = mysql.createConnection({
 
 const publicDirectory = path.join(__dirname, './public');
 app.use(express.static(publicDirectory));
+
+//Parse URL encoded bodies (as sent by HTML forms) is a method inbuilt in express to recognize the incoming Request Object as strings or arrays
+app.use(express.urlencoded({
+    extended: false
+}));
+
+//Parse JSON bodies (as sent by API clients)
+app.use(express.json());
+
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'hbs');
 
@@ -27,20 +36,9 @@ dataBase.connect((error) =>
     }
 });
 
-app.get("/", (req, res) => 
-{
-    res.render("index"); 
-});
-
-app.get("/signUp", (req, res) => 
-{
-    res.render("signUp_page"); 
-});
-
-app.get("/login", (req, res) => 
-{
-    res.render("login_page"); 
-});
+//Define routes :
+app.use('/', require('./routes/pages'));
+app.use('/auth', require('./routes/auth'));
 
 app.listen(8000, () => 
 {

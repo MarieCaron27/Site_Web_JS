@@ -1,4 +1,4 @@
-var form = document.getElementById("signUpForm");
+/*var form = document.getElementById("signUpForm");
 
 
 form.addEventListener("submit",(event)=>
@@ -113,4 +113,10 @@ function validateFields(firstName,lastName,username,mailAddress,userPassword,pas
     }
 
     return everythingOkay;
+}*/
+
+exports.register = (req,res) =>
+{
+    console.log(req.body);
+    res.send("Form submitted");
 }
