@@ -1,0 +1,216 @@
+/* Body */
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header
+{
+    background-color: palevioletred;
+    border-bottom: 5px solid black;
+}
+
+#navigation
+{
+    flex-direction: row!important;
+    padding-bottom: 1rem!important;
+    margin-bottom: 1.5rem!important;
+    align-items: center!important;
+    flex-direction: column!important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    display: flex!important;
+    box-sizing: border-box;
+}
+
+#div 
+{
+    display: block;
+}
+
+#navigation h1
+{
+    text-align:center;
+}
+
+/* Titles */
+
+h1,h2,h3
+{
+    text-align: center;
+}
+
+/* Sign Up Form */
+
+#inscription
+{
+    margin-right: 400px;
+    margin-left: 400px;
+    border: solid thick black;
+    margin-top: 10px;
+}
+
+.signUpForm
+{
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+
+.inscription input[type="text"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="mail"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="password"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="sumbit"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+/* Log In Form */
+
+#connexion
+{
+    margin-right: 400px;
+    margin-left: 400px;
+    border: solid thick black;
+    margin-top: 10px;
+}
+
+.logInForm
+{
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+
+.connexion input[type="text"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="password"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="sumbit"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+/* Welcome page */
+
+#welcomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrage vertical */
+    flex-wrap: wrap;
+}
+
+.images-container {
+    flex: 1;
+    max-width: 30%; /* Ajuster la largeur des images */
+}
+
+.images-container img {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px; /* Ajouter une marge pour l'espace autour du texte */
+}
+
+.startButton {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Pour supprimer le soulignement */
+}
+
+.startButton:hover {
+    background-color: darkviolet; /* Couleur au survol */
+}
+
+/* Game page */
+
+li
+{
+    list-style: none;
+}
+
+/* Footer */
+
+#footer 
+{
+	clear: both;
+	margin: 10px;
+	border-top: 5px solid black;
+	background: palevioletred;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer p 
+{
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	font-size: smaller;
+	color: black;
+}
+
+#footer a 
+{
+	color: balck;
+}
