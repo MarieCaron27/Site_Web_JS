@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="../public/style/style.css">
     <title>SignUp_Form</title>
 </head>
 <body>
@@ -11,9 +11,9 @@
         <div class="navigation" id="navigation">
             <h1>Gaming Zone</h1>
             <nav class="menu">    
-                <a href='/'>Home</a>
-                <a href='/register'>Sign Up</a>
-                <a href='/login'>Log In</a>
+                <a href='../views/index.hbs'>Home</a>
+                <a href='../views/register.hbs'>Sign Up</a>
+                <a href='../views/login.hbs'>Log In</a>
             </nav>
         </div>
     </header>
@@ -21,7 +21,7 @@
     <main>
         <section class="inscription">
             <article id="inscription">
-                <form id="signUpForm" class="signUpForm" action="/auth/register" method="post">
+                <form id="signUpForm" class="signUpForm" action="../controllers/register_form.js" method="post">
                     <h3>Sign Up</h3>
 
                     <div class="signUpForm">
@@ -60,7 +60,7 @@
 
                     <div class="signUpForm">
                         <p class="link">Do you already have an account?</p> 
-                        <a href="/login">Login to my account</a>
+                        <a href="../views/login.hbs">Login to my account</a>
                     </div>
                 </form>
 
